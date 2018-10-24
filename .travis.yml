@@ -1,0 +1,6 @@
+language: javascript
+
+sudo: false
+
+script:
+- node ./get-aoscube-download-daily.js

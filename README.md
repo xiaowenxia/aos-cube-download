@@ -12,10 +12,7 @@
 
 |脚本|说明|
 |:---:|---|
-|get-aoscube-install-count.js|获取指定日期到现在的下载量|
 |get-aoscube-download-daily.js|获取从2017-10-20开始到指定日期的每天下载量|
-|get-aoscube-download-daily-pip.js|获取从2018-09-04开始到指定日期的每天pip下载量(去掉了源镜像工具的下载量)|
-|get-aoscube-download-system.js|获取一个月的不同操作系统的下载量|
 
 ### 运行
 
@@ -23,20 +20,4 @@
 npm install
 node ./get-aoscube-download-daily.js
 ```
-
-### 从2017-10-20到2018-08-30的下载量
-
-#### 数据下载
-
-[count-20171020-20180830](http://gitlab.alibaba-inc.com/chenan.xxw/eco-scripts/blob/master/get-ucube-install-count/count-20171020-20180830.xlsx)
-
-#### 图表展示：
-
-总下载量：
-
-![](download_count_20171020-20180830.png)
-
-当日下载量：
-
-![](daily_count_20171020-20180830.png)
 
