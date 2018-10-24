@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "test-aos-cube",
+  "private_key_id": "2e831baed619ed0674473c8ac74408adb394a3b6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC0xIfsY6G7jmUp\n2TCsGPN7CMkgA+cFLPyuMSnB/gWEBCql3LM1KEdh2xZ6r0u7mZvx/xZmDlPbROHe\n2nFZCIzUEP5hAjffDgqWnCj8uiu4cFQPqlrz7YfFJYFyRFXGvfvZqYit0sCN7RNk\nVCHOhEPNgTTCC3S6ow31IVRSjS82V6sqla7fSDvaW610OQUkNiTDZQgnbLb7ljx8\nA2W2aL4Y8Q596ryhG7N+5vWQJ0KakovVeIhFfKrSnUYlgeEZWISxh5ELMJdH7dXf\ncvuc1xktU+MXsOod+9DE/9kDsvM3+gAAasaDrEsSMZ64NBu+GVG5tfsMioSM5xGN\nqM9cSbYTAgMBAAECggEAQsBJ8vwthm1EJQprIznJezbY0iYuwmYE3qwP3+9WCRRi\nzUGsuWXoyhVVfTNLE3jbMacBFemXhKIwiBMBBSAXpN2rmZXwnMD6HviGWCDFMUPl\nfq1pDac6Wg4J+XCLfiq8m/kzHAD1ktMnNIauvyxvPy1FlpwVXDAG4OyQTzWMaBOi\nnL1M1SxNhpyz9D/8T5+PBvO76NtfxO/5HyExJSSjiFgnqrAuUtFGC7b0E7Up661D\n0NZ9djI/nT6LWvG6gLsJDnuTuf+BLvbiTwJvwjUzV/1lu3nNp6wkEjJoQyrtUXLa\nthODxxg8Yz0BxKUjSUegDMEjH5XJkjFRg1GGVK6XeQKBgQDxEkmnE329AZJwv54c\nLrcReAsE0zxutyTP49iOSzwZ3s080Nq8eUDW/Jyo+YN8zdWIet9o4L4h5IzrSfu7\nxfxUenNB5AklzCMQqi6Serkxp49tTdsjOmpfBuQC/KID/q9EAZOYL8+H4AMn0LRx\nTijLTMym+WKz9cuQjsmQeKiCiwKBgQC/9j8Tmgozf5/gE8CRbX94cEcVqPswQbIH\nzwHXpzKp+1xtvT+4G2B2HHatZNxsYLoJD08mlxAglJdLvcLW3eoI8Wt7kgYtjNKJ\nhsaS4QS3iDa4HZwHU63W00FF5yDWzhxfkCWazTH7PXbgy/QtAuTmv1Mvy1G8JIOS\nKwJ0NPYzmQKBgQDS/j6YjOawVn/lTtEDuZ9hGsAKKRfrj0AY9ELFx/OCcQ8Q+3t3\nGmk1wUMcYcZDpaQPH/wJvyqqX283QDmjz1VaWxIlyYB4JINMQqcgbWlJnG5cLJhv\n7ODM6ysFsjfbZz3fN8IGoVHyio44euJziQULatx0CDHrcGYKz+57FB/ooQKBgEw5\nFEzNQrW2PJ52WWWlrBL/ykoggjVkMLQHD70459Y1ODtfBTkurbvYi4tIXHowYk6M\npKo3G7FEL1tk60P0dCS+8CXuEsPtggAX4yuZbA0QamHrZ/RE1udRlT6TiyegSgXs\nL/Jq/ii7/ENA2SEyX//8AqUcv8TMXu4gY+YOzaApAoGBANKVaZuGuYQmzb/gOP/3\nlkbzU3FQPYEVoqRZtgTVmk9PVeXyieUuPG+yhdQcJ9ttLhS3z+aAu+GZZN+h7umk\nfO/By7+DFWPQGnZqGMS9kgIZRfdF1KmPOnVGfvPXH2BfX0lmvL+dFMm2x/3wHKt9\nKDJ59IFYfdGlRvpkCrkv0sMN\n-----END PRIVATE KEY-----\n",
+  "client_email": "test-for-pypi@test-aos-cube.iam.gserviceaccount.com",
+  "client_id": "111371498059692081878",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/test-for-pypi%40test-aos-cube.iam.gserviceaccount.com"
+}
+
