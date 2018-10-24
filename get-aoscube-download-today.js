@@ -28,6 +28,36 @@ function printResult(rows) {
     // [END bigquery_simple_app_print]
 }
 
+const http = require("http");
+function send(date, count){
+    console.log(date, count);
+    var options = {
+        "method": "POST",
+        "hostname": "xxw-helloworld.goiot.cc",
+        "port": null,
+        "path": "/aoscubedownload",
+        "headers": {
+          "content-type": "application/json"
+        }
+      };
+    
+      var req = http.request(options, function (res) {
+        var chunks = [];
+      
+        res.on("data", function (chunk) {
+          chunks.push(chunk);
+        });
+      
+        res.on("end", function () {
+          var body = Buffer.concat(chunks);
+          console.log(body.toString());
+        });
+      });
+      
+      req.write(JSON.stringify({ date: date, count: count }));
+      req.end();
+}
+
 // Imports the Google Cloud client library
 const BigQuery = require('@google-cloud/bigquery');
 
@@ -37,26 +67,17 @@ const bigquery = new BigQuery({
     keyFilename: './keyfile.json'
 });
 
-const days = 1;
-
-function queryByDaily(day) {
-
-    if (day == days) {
-        //console.log("day out");
-        return;
-    }
+function queryByDaily() {
 
     const sqlQuery = `SELECT
         COUNT(*) as count
     FROM TABLE_DATE_RANGE(
         [the-psf:pypi.downloads],
-        DATE_ADD(TIMESTAMP("2018-10-12"), ${day}, "day"),
-        DATE_ADD(TIMESTAMP("2018-10-12"), ${day}, "day")
+        DATE_ADD(CURRENT_TIMESTAMP(), -1, "day"),
+        DATE_ADD(CURRENT_TIMESTAMP(), -1, "day")
     )
     WHERE file.project = "aos-cube"
     `;
-
-
 
     // Query options list: https://cloud.google.com/bigquery/docs/reference/v2/jobs/query
     const options = {
@@ -70,13 +91,10 @@ function queryByDaily(day) {
         .query(options)
         .then(results => {
             const rows = results[0];
-            //console.log(rows[0])
-            //console.log('Rows[2017-10-20]:');
-            //rows.forEach(row => console.log(row));
-            //const cnt = JSON.parse(rows[0]);
-            //console.log(typeof cnt);
             console.log(rows[0].count);
-            queryByDaily(day + 1);
+            var nowDate = new Date();
+            console.log(nowDate);
+            send(nowDate.toJSON().split('T')[0], rows[0].count);
         })
         .catch(err => {
             console.error('ERROR:', err);
@@ -84,4 +102,6 @@ function queryByDaily(day) {
         });
 }
 
-queryByDaily(0);
+
+
+queryByDaily();
