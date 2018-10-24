@@ -14,8 +14,6 @@
  * limitations under the License.
  */
 
-'use strict';
-
 // [START bigquery_simple_app_all]
 function printResult(rows) {
     // [START bigquery_simple_app_print]
