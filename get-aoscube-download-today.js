@@ -62,7 +62,7 @@ function queryByDaily() {
         .then(results => {
             const rows = results[0];
             console.log(rows[0].count);
-            var nowDate = new Date();
+            var nowDate = new Date(new Date() - 24*60*60*1000);
             console.log(nowDate);
             send(nowDate.toJSON().split('T')[0], rows[0].count);
         })
