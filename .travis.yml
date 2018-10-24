@@ -3,4 +3,4 @@ language: node_js
 sudo: false
 
 script:
-- node ./get-aoscube-download-daily.js
+- node ./get-aoscube-download-today.js
